@@ -1,4 +1,4 @@
-# autopyc
+# autopyc v1.0.0
 This is a small script to automatically compile your Python code using py_compile, useful to deploy compiled code without sharing the sources.
 
 It is useful for big projects, with a lot of .py files, in fact running "python -m compileall" would compile the sources, but storing the .pyc in __pycache__ folders and subfolders.
