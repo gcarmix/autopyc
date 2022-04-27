@@ -1,9 +1,13 @@
 # autopyc v1.0.0
 This is a small script to automatically compile your Python code using py_compile, useful to deploy compiled code without sharing the sources.
 
-It is useful for big projects, with a lot of .py files, in fact running "python -m compileall" would compile the sources, but storing the .pyc in __pycache__ folders and subfolders.
+It is useful for big projects, with a lot of .py files, in fact running "python -m compileall" would compile the sources, but storing the .pyc in __pycache__ folders and subfolders. Tested with Python 3 on big Django and Flask projects.
 
 This script instead will prepare the output folder by creating a new project folder with just the compiled files in place of the sources.
+
+Here is an example
+
+INPUT:
 ```
 --+ProjectFolder
   |
@@ -22,6 +26,8 @@ This script instead will prepare the output folder by creating a new project fol
      
      
 python autopyc.py -d ProjectFolder
+
+OUTPUT:
 ```
 --+ProjectFolder_autopyc
   |
